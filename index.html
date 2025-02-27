@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张祎鹤严的个人主页</title>
+    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 头部 */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #6366f1, #3b82f6);
+            color: white;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid white;
+        }
+
+        /* 导航 */
+        nav {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 20px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        /* 主要内容区块 */
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #3b82f6;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* 技能标签 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #eef2ff;
+            color: #3b82f6;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* 项目卡片 */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* 联系方式 */
+        .contact-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 24px;
+        }
+
+        .contact-list a {
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .contact-list a:hover {
+            color: #3b82f6;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="头像" class="avatar">
+            <h1>张祎鹤严/Yiheyan Zhang</h1>
+            <p>全栈开发者 | 技术爱好者 </p>
+            <p><strong>无限学习 无限进步</strong></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">关于我/About Me</a></li>
+            <li><a href="#skills">技能/Skills</a></li>
+            <li><a href="#projects">项目/Project</a></li>
+            <li><a href="#contact">联系/Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 关于我 -->
+        <section id="about">
+            <h2><i class="fas fa-user"></i> 关于我/About Me</h2>
+            <p>
+                <strong> 2021.9 - 2023.6 </strong>就读于西安交通大学能源与动力工程学院能源与动力工程专业
+                <br>
+                <strong> 2023.9 - 至今 </strong> 就读于西安交通大学电子与信息工程学部信息工程专业
+                <br>
+                热衷于机器人相关开发、掌握硬件设计、嵌入式开发技能，有SLAM、Yolo等基础，掌握传统控制算法如PID、MPC、LQR等
+                <br>
+                就读期间参加多项竞赛，如RoboMaster机甲大师赛、全国大学生机械设计创新大赛、全国大学生节能减排社会实践与创新大赛、全国大学生电子设计竞赛等并获得优秀成绩
+                <br>
+                目前正参与2025RoboCon机器人大赛、2025年全国大学生电子设计竞赛、2025年“大唐杯”全国大学生新一代信息通信技术大赛备赛
+            </p>
+        </section>
+
+        <!-- 技能 -->
+        <section id="skills">
+            <h2><i class="fas fa-code"></i> 技术栈/Technology Stack</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">嵌入式开发</span>
+                <span class="skill-tag">硬件开发</span>
+                <span class="skill-tag">机器人开发经验</span>
+                <span class="skill-tag">Ubuntu开发基础</span>
+                <span class="skill-tag">SolidWorks基础</span>
+            </div>
+        </section>
+
+        <!-- 项目展示 -->
+        <section id="projects">
+            <h2><i class="fas fa-project-diagram"></i> 项目案例/Project Case</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Waiting for completion">
+                    <h3>Waiting for completion</h3>
+                    <p>Waiting for completion</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Waiting for completion">
+                    <h3>Waiting for completion</h3>
+                    <p>Waiting for completion</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> 联系我</h2>
+            <div class="contact-list">
+                <!-- 邮箱 -->
+                <div class="contact-item">
+                    <a href="mailto:xjtu_zyhy@163.com" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <span class="contact-text">xjtu_zyhy@163.com</span>
+                </div>
+        
+                <!-- GitHub -->
+                <div class="contact-item">
+                    <a href="https://github.com/YiheyanZhang" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <span class="contact-text">GitHub/YiheyanZhang</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
