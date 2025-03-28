@@ -121,6 +121,13 @@
             border-radius: 5px;
             margin-bottom: 15px;
         }
+        .project-card video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
 
         /* 联系方式 */
         .contact-list {
@@ -365,22 +372,328 @@
         </section>
 
         <!-- 项目展示 -->
-        <section id="projects">
-            <h2><i class="fas fa-project-diagram"></i> 项目案例/Project Case</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x200" alt="Waiting for completion">
-                    <h3>Waiting for completion</h3>
-                    <p>Waiting for completion</p>
+<section id="projects">
+    <h2><i class="fas fa-project-diagram"></i> 项目案例/Project Case</h2>
+    <div class="projects">
+        <!-- 灵巧手项目 -->
+        <div class="project-card">
+            <div class="media-container">
+                <img src="https://yiheyanzhang.github.io/Image/Gripper3.jpg" 
+                     alt="Gripper3灵巧手穿戴部分"
+                     class="project-media">
+            </div>
+            <div class="project-content">
+                <h3>基于ACT模仿学习的三指灵巧手Gripper3</h3>
+                <div class="project-tags">
+                    <span class="tag">模仿学习</span>
+                    <span class="tag">控制算法开发</span>
+                    <span class="tag">硬件设计</span>
+                </div>
+                <h3>项目介绍</h3>
+                <p class="project-desc">
+                    项目使用电机直驱的方式进行灵巧手设计，本体设计为三指，共8个自由度，可穿戴外骨骼部分与本体同构，希望通过可穿戴外骨骼部分进行数据采集，通过ACT模仿学习转化为本体的关节角度，实现灵巧控制，完成转笔、开瓶盖、铰链等灵巧操作
+                </p>
+                <h3>我的职责</h3>
+                <p>
+                    进行硬件方面的设计、支持，进行灵巧手本体的控制算法开发、柔顺控制算法开发
+                </p>
+                <h3>项目成果</h3>
+                <ul class="project-spec">
+                    <li>项目受到了清华大学智能产业研究院周谷越教授指导，拟投稿至Corl会议</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 导盲装置项目 -->
+        <div class="project-card">
+            <div class="media-container">
+                <img src="https://yiheyanzhang.github.io/Image/25Tengfeibei1.jpg" 
+                     alt="答辩现场"
+                     class="project-desc">
+                <img src="https://yiheyanzhang.github.io/Image/25Tengfeibei2.jpg" 
+                     alt="YOLOv5目标识别"
+                     class="grid-item">
+            </div>
+            <div class="project-content">
+                <h3>基于激光雷达和机器视觉的智能导盲装置</h3>
+                <div class="project-tags">
+                    <span class="tag">SLAM</span>
+                    <span class="tag">导航避障</span>
+                    <span class="tag">特征提取</span>
+                </div>
+                <h3>项目介绍</h3>
+                <p class="project-desc">
+                    项目提出了一种单线激光雷达融合单目相机进行局部3DSLAM和导航的方法，并使用yolov5进行红绿灯等标志性物体的检测，除网上搜集数据集外，结合西安市的红绿灯配置情况整理了13000余张照片作为数据集，能够实现各式红绿灯检测，准确率较高，且对于小目标有较好效果；除此之外希望结合目标检测优化导盲机器人的相关决策。
+                </p>
+                <h3>我的职责</h3>
+                <p>
+                    负责了项目全部的技术开发工作，项目负责人。
+                </p>
+                <h3>项目成果</h3>
+                <ul class="project-spec">
+                    <li>项目获得西安交通大学第三十六届腾飞杯创新创业大赛创新赛道校级二等奖</li>
+                    <li>红绿灯部分的训练模型上传至github:https://github.com/YiheyanZhang/TrafficLightDetect-BasedYOLOv5.git</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RoboMaster系列 -->
+        <div class="project-card">
+            <div class="media-stack">
+                <div class="media-group">
+                    <h4 class="media-title">全向轮步兵机器人</h4>
+                    <img src="https://yiheyanzhang.github.io/Image/24RM1.jpg" 
+                         alt="全向轮结构"
+                         class="stack-media">
+                </div>
+                
+                <div class="media-group">
+                    <h4 class="media-title">轮腿平衡系统</h4>
+                    <img src="https://yiheyanzhang.github.io/Image/24RM2.jpg" 
+                         alt="平衡机构"
+                         class="stack-media">
                 </div>
 
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x200" alt="Waiting for completion">
-                    <h3>Waiting for completion</h3>
-                    <p>Waiting for completion</p>
+                <div class="media-group">
+                    <h4 class="media-title">战队合影</h4>
+                    <img src="https://yiheyanzhang.github.io/Image/24RM3.jpg" 
+                         alt="战队成员"
+                         class="stack-media">
+                </div>
+
+                <div class="media-group">
+                    <h4 class="media-title">自瞄系统演示</h4>
+                    <video src="https://yiheyanzhang.github.io/Image/24RM4.mp4" 
+                           controls
+                           class="stack-media"></video>
                 </div>
             </div>
-        </section>
+            <div class="project-content">
+                <h3>RoboMaster机甲大师赛研发体系</h3>
+                <div class="project-tags">
+                    <span class="tag">嵌入式开发</span>
+                    <span class="tag">运动控制</span>
+                    <span class="tag">机器视觉</span>
+                </div>
+                <ul class="project-spec">
+                    <li>2023年RoboMaster超级对抗赛南部赛区殿军，全国一等奖</li>
+                    <li>2024年RoboMaster超级对抗赛南部赛区殿军，全国一等奖</li>
+                    <li>参与自瞄电控端调试，自旋目标自瞄准确率＞80%，实战目标自瞄准确率＞40%</li>
+                    <li>开发了全向轮、舵轮、麦克纳姆轮底盘步兵的运动控制系统</li>
+                    <li>参与开发了轮腿平衡步兵控制系统设计</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="media-container">
+                <img src="https://yiheyanzhang.github.io/Image/24Jichuang1.jpg" 
+                     alt="机创图片1"
+                     class="project-media">
+            </div>
+            <div class="project-content">
+                <h3>车船一体莲藕采摘机器</h3>
+                <div class="project-tags">
+                    <span class="tag">树莓派开发</span>
+                    <span class="tag">硬件设计</span>
+                </div>
+                <h3>项目介绍</h3>
+                <p class="project-desc">
+                    项目设计了一款水陆两栖、车船一体式的莲藕采摘机器，该机器可以使用手柄遥控，根据现有人工采摘方式设计了高压水枪进行冲藕、回转收集装置将浮到表面的莲藕收集至收集袋中，最终实现机器采收莲藕。
+                </p>
+                <h3>我的职责</h3>
+                <p>
+                    负责开发基于Raspberry PI 4B开发套件的车船一体莲藕采摘机器的运动机构、收集机构控制算法，利用陀螺仪数据进行自动位姿调整，通过手柄进行控制。
+                </p>
+                <h3>项目成果</h3>
+                <p>
+                    <ul class="project-spec">
+                        <li>项目参加第十一届全国大学生机械创新设计大赛并获得全国二等奖</li>
+                        <li>申请一项国家级大学生创新创业项目</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="media-container">
+                <img src="https://yiheyanzhang.github.io/Image/24Jienengjianpai1.jpg" 
+                     alt="节能减排图片1"
+                     class="project-media">
+            </div>
+            <div class="project-content">
+                <h3>基于磁性颗粒换热和相变材料蓄热的聚光太阳能集中供热系统</h3>
+                <div class="project-tags">
+                    <span class="tag">硬件设计</span>
+                    <span class="tag">机械设计</span>
+                    <span class="tag">嵌入式开发</span>
+                </div>
+                <h3>项目介绍</h3>
+                <p class="project-desc">
+                    项目提出了一种基于磁性颗粒换热和相变材料蓄热的聚光太阳能集中供热系统，该系统通过聚光模块反射太阳光至装置，加热其中的磁性颗粒，通过磁性颗粒对换热器中的水进行加热，换热后磁性颗粒进行循环继续吸收太阳能，实现清洁可持续能源利用。
+                </p>
+                <h3>我的职责</h3>
+                <p>
+                    基于Raspberry PI 4B套件，负责整体系统的控制算法开发，具体内容有：基于太阳赤纬角、太阳时角和当地纬度的定日镜自动追日系统控制，可计算出当前时刻太阳方位角和太阳高度角，在固定定日镜与二次反射装置之间角度后，可实现根据时间自动将太阳光经定日镜反射至二次反射装置，并按照既定光路垂直轨道传播；整体循环系统的控制，包括转速、方向和流量控制。除此之外，负责整体结构的设计、制作和安装。
+                </p>
+                <h3>项目成果</h3>
+                <p>
+                    <ul class="project-spec">
+                        <li>项目参加第十七届全国大学生节能减排社会实践与科技竞赛并获得全国一等奖</li>
+                        <li>申请一项新型实用专利</li>
+                        <li>获得中国科学院院士，西安交通大学能源与动力工程学院教授陶文铨院士、上海交通大学机械与动力工程学院特聘教授王丽伟教授、北京科技大学能源与环境工程学院副院长夏德宏教授推荐</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="media-container">
+                <img src="https://yiheyanzhang.github.io/Image/24Diansai1.jpg" 
+                     alt="电赛图片1"
+                     class="project-media">
+            </div>
+            <div class="project-content">
+                <h3>基于超声波发生器的小型录音设备压制系统</h3>
+                <div class="project-tags">
+                    <span class="tag">硬件设计</span>
+                    <span class="tag">嵌入式开发</span>
+                </div>
+                <h3>项目介绍</h3>
+                <p class="project-desc">
+                    项目基于2024年全国大学生电子设计竞赛(TI杯)陕西赛区G题，采用超声波测距模块上的超声波发射端子并按照一定阵列排布，采用TI公司生产的MSPM0G3507作为核心板进行控制。项目最终完成赛题要求：1.实现1m、60°角范围内录音设备屏蔽效果；2.实现屏蔽装置功率1W~4W功率步进可调；3.实现自主判断有无音频信号并进行录音设备屏蔽功能；
+                </p>
+                <h3>我的职责</h3>
+                <p>
+                    辅助硬件设计，负责全部嵌入式开发。
+                </p>
+                <h3>项目成果</h3>
+                <p>
+                    <ul class="project-spec">
+                        <li>项目参与2024年全国大学生电子设计竞赛(TI杯)陕西赛区并获得三等奖</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* 新增CSS样式 */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.media-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-media {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.project-media:hover {
+    transform: scale(1.03);
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.grid-item {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.media-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.stack-media {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.media-group {
+    position: relative;
+}
+
+.media-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 8px 15px;
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.project-content {
+    padding: 0 15px 15px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.tag {
+    background: #f0f4ff;
+    color: #3b82f6;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+}
+
+.project-spec {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.project-spec li {
+    position: relative;
+    padding: 6px 0;
+}
+
+.project-spec li::before {
+    content: "▹";
+    position: absolute;
+    left: -20px;
+    color: #3b82f6;
+}
+
+@media (max-width: 768px) {
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-media {
+        height: 220px;
+    }
+    
+    .stack-media {
+        height: 180px;
+    }
+}
+</style>
 
         <!-- 联系方式 -->
         <section id="contact">
